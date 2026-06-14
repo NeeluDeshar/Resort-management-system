@@ -1,0 +1,36 @@
+/* General Styling for Navigation Section */
+.navigation {
+  display: flex;
+  justify-content: center;
+  /* Center the iframe horizontally */
+  align-items: center;
+  /* Center the iframe vertically */
+  padding: 20px;
+  background-color: #f8f9fa;
+  /* Light background color */
+}
+
+.navigation.top {
+  margin-top: 20px;
+  /* Space at the top */
+}
+
+/* Styling the iframe */
+.map-iframe {
+  border: none;
+  /* Remove iframe border */
+  max-width: 100%;
+  /* Make the iframe responsive */
+  height: 1000px;
+  /* Set a fixed height */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .map-iframe {
+    width: 200%;
+    /* Make the iframe take up full width on smaller screens */
+    height: 600px;
+    /* Adjust the height for small screens */
+  }
+}

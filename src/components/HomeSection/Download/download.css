@@ -1,0 +1,52 @@
+.download {
+  background-color: #31b675;
+  color: white;
+  height: 90vh;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.download h1 {
+  font-size: 50px;
+}
+
+.download ul {
+  margin: 50px 0;
+}
+
+.download ul li {
+  margin: 15px 0;
+}
+
+.download .row img {
+  margin-right: 10px;
+}
+
+.download .row {
+  position: relative;
+}
+
+.download .image {
+  position: absolute;
+  left: 10%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .download .flex_space {
+    flex-direction: column;
+    padding: 2px;
+  }
+
+  .download .row {
+    width: 100%;
+  }
+
+  .download .row2 {
+    display: none;
+  }
+
+  .download {
+    height: 100vh;
+  }
+}
