@@ -1,0 +1,13 @@
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.badge--yellow { background: #fff8e1; color: #f59e0b; }
+.badge--green  { background: #e8faf0; color: #27ae60; }
+.badge--blue   { background: #e8f4fd; color: #2980b9; }
+.badge--red    { background: #fde8e8; color: #e74c3c; }
+.badge--gray   { background: #f0f0f0; color: #888; }

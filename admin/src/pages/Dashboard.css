@@ -1,0 +1,130 @@
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+}
+
+.page-loading, .page-error {
+  text-align: center;
+  padding: 80px;
+  color: #888;
+  font-size: 15px;
+}
+
+/* Stat cards */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-left: 4px solid var(--accent);
+  transition: box-shadow 0.2s, transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.stat-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.stat-card__icon {
+  width: 48px; height: 48px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.stat-card__value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1;
+}
+
+.stat-card__label {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* Section */
+.dashboard-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.dashboard-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.dashboard-section__header h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.view-all {
+  font-size: 13px;
+  color: #31b675;
+  font-weight: 500;
+}
+
+/* Table */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.admin-table th {
+  background: #f8f9fa;
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.admin-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f7f7f7;
+  color: #333;
+}
+
+.admin-table tr:last-child td { border-bottom: none; }
+
+.admin-table tr:hover td { background: #fafafa; }
+
+.table-empty {
+  text-align: center;
+  color: #aaa;
+  padding: 40px !important;
+}
