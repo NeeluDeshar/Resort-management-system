@@ -33,16 +33,30 @@ const Cards = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
           {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
             breakpoint: 900,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2,
+              slidesToScroll: 1,
+              initialSlide: 0,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
             }
           },
         ]
@@ -56,10 +70,10 @@ const Cards = () => {
        <div className='cards' key={value.id}>
         <Link to={`/booking/${value.id}`} className="popular-card-link">
         <div className='item'>
-            <div className='image' style={{ height: "150px", overflow: "hidden" }}>
-                <img src={(value.image)} alt={value.name} style={{ width: "100%", height: "150px", objectFit: "cover", display: "block" }} />
+            <div className='image'>
+                <img src={value.image} alt={value.name} />
                 <i className='fas fa-map-marker-alt'>
-                <label>{(value.country)}</label>
+                  <label>{value.country}</label>
                 </i>
             </div>
 
